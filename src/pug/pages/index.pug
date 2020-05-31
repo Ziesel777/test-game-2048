@@ -1,0 +1,52 @@
+//-
+	Пример игры: http://gabrielecirulli.github.io/2048/ только в нем ходы делаются с помощью клавиатуры
+	Правила игры.
+	В каждом раунде появляется плитка номинала «2» (с вероятностью 90 %) или «4» (с вероятностью 10 %).
+	В начале игры на поле находится 1 клетка.
+	Чтобы сделать ход, игрок должен зажать левую кнопку мыши и переместить курсор в одном из четырех направлений.
+	Все клетку с числами при этом сдивгаются в этом направлении до упора.
+	Если при этом две плитки одного номинала «налетают» одна на другую, то они слипаются в одну,
+	номинал которой равен сумме соединившихся плиток.
+	После каждого хода на свободной секции поля появляется новая плитка номиналом «2» или «4».
+	Если при нажатии кнопки местоположение плиток или их номинал не изменится, то ход не совершается.
+	Тоесть новую плитку в этом случае добавлять не нужно.
+	За каждое соединение игровые очки увеличиваются на номинал получившейся плитки.
+	Игра заканчивается поражением, если после очередного хода невозможно совершить действие.
+
+
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		title Game 2048
+	body
+		.game-container
+			#playfield
+				.back(style="top: 0px; left: 0px;")
+				.back(style="top: 100px; left: 0px;")
+				.back(style="top: 200px; left: 0px;")
+				.back(style="top: 300px; left: 0px;")
+
+				.back(style="top: 0px; left: 100px;")
+				.back(style="top: 100px; left: 100px;")
+				.back(style="top: 200px; left: 100px;")
+				.back(style="top: 300px; left: 100px;")
+
+				.back(style="top: 0px; left: 200px;")
+				.back(style="top: 100px; left: 200px;")
+				.back(style="top: 200px; left: 200px;")
+				.back(style="top: 300px; left: 200px;")
+
+				.back(style="top: 0px; left: 300px;")
+				.back(style="top: 100px; left: 300px;")
+				.back(style="top: 200px; left: 300px;")
+				.back(style="top: 300px; left: 300px;")
+
+				.score.js-score|0
+
+			.info-modals.js-info-modals
+				.game-over.js-game-over|Game-over
+					.info-score.js-info-score
+					.btn.js-btn-restart|Restart

@@ -1,0 +1,64 @@
+// Font
+$mainFont                : 'Roboto', Arial, sans-serif;
+
+// Size
+$mainFontColor           : #303030;
+$mainFontSize            : 16px;
+$mainFontWeight          : 400;
+$mainLineHeight          : 20px;
+
+// Break points
+$xl_desktop              : 1920;
+$l_desktop               : 1680;
+$m_desktop               : 1366;
+$sm_desktop              : 1280;
+$xs_desktop              : 1152;
+$ms_desktop              : 1024;
+
+$xl_table                : 980;
+$l_table                 : 848;
+$m_table                 : 768;
+$s_table                 : 600;
+
+$xl_phone                : 533;
+$l_phone                 : 480;
+$m_phone                 : 320;
+
+
+$desktopWidth            : 1280px;
+$smDesktopWidth          : 980px;
+$tableWidth              : 768px;
+$phoneWidth              : 480px;
+$smPhoneWidth            : 320px;
+
+// Main color
+$default-color           : #ffffff;
+$primary-color           : #444ce0;
+$success-color           : #63d544; // ++
+$danger-color            : #fc5c65;
+$warning-color           : #fed330;
+$light-color             : #999999;
+$purple-color            : #8854d0;
+
+// User color
+$orange                  : #FF963F;
+$btn-secondary           : #DFE3F3;
+$bg-black                : #101828;
+
+// Neutral Color
+$neutral-primary         : #303133;
+// $neutral-regular         : #606266;
+$neutral-regular         : #484848;
+$neutral-secondary       : #909399;
+$neutral-placeholder     : #C0C4CC;
+
+// Border Color
+$border-base             : #DCDFE6;
+$border-light            : #E4E7ED;
+$border-lighter          : #EBEEF5;
+$border-lightex          : #F2F6FC;
+
+// user var
+$kfs: 1;
+
+$pad-container: 60px;

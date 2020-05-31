@@ -1,0 +1,48 @@
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@function kfs($width){
+  $width: $width * 1px;
+  @return ($width/$desktopWidth);
+}
+
+@mixin size($width,$height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin point_screen($width) {
+  @media screen and (max-width: ($width * 1px)) {
+    @content
+  }
+}
+
+@mixin responsive-box($height){
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    padding-top: $height;
+  }
+}
+
+@mixin bg-img-center {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
